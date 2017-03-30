@@ -21,3 +21,5 @@ D:\Projetos\Flag.AvanteSales.Pro\NovoAvanteSales\AvanteSales.SystemFramework\obj
 D:\Projetos\Flag.AvanteSales.Pro\NovoAvanteSales\AvanteSales.SystemFramework\obj\Release\uploadflags.txt
 D:\Projetos\Flag.AvanteSales.Pro\NovoAvanteSales\AvanteSales.SystemFramework\obj\Release\AvanteSales.SystemFramework.dll.mdb
 D:\Projetos\Flag.AvanteSales.Pro\NovoAvanteSales\AvanteSales.SystemFramework\bin\Release\AvanteSales.SystemFramework.dll.mdb
+D:\Projetos\Flag.AvanteSales.Pro\NovoAvanteSales\AvanteSales.SystemFramework\obj\Release\AvanteSales.SystemFramework.dll.mdb
+D:\Projetos\Flag.AvanteSales.Pro\NovoAvanteSales\AvanteSales.SystemFramework\bin\Release\AvanteSales.SystemFramework.dll.mdb

@@ -20,6 +20,7 @@ namespace AvanteSales.Pro.Fragments
 {
     public class ListaProdutos : Android.Support.V4.App.Fragment
     {
+        static int CountAnterior;
         private int currentPostion;
         int PositionItemVendido;
         static ProgressDialog progress;
@@ -567,6 +568,13 @@ namespace AvanteSales.Pro.Fragments
                 int i = 0;
 
                 var produtos = CSProdutos.BuscaProdutos(cliente.LinhaSelecionada.COD_GRUPO_COMERCIALIZACAO_FILTRADO, cliente.GrupoSelecionado, FamiliaSelecionada, CSPDVs.Current.COD_CATEGORIA, CSPDVs.Current.COD_PDV, CSEmpresa.Current.IND_LIBERA_VENDA_PRODUTO_SEM_ESTOQUE, CSTiposDistribPolicitcaPrecos.Current.COD_TIPO_DISTRIBUICAO_POLITICA, false, CSPDVs.Current.COD_DENVER, !IsBroker() && !IsBunge()).Cast<CSProdutos.CSProduto>().ToList();
+
+                if (produtos.Count > 0)
+                    CountAnterior = produtos.Count;
+                else if (CountAnterior == 1)
+                {
+                    AdapterProdutos.Clear();
+                }
 
                 if (CSPDVs.Current.PEDIDOS_PDV.Current != null &&
                     produtos != null && produtos.Count > 0)

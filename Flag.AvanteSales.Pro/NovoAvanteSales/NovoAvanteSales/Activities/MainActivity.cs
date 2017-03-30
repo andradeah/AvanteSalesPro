@@ -40,8 +40,8 @@ namespace AvanteSales.Pro.Activities
 
             sqlite3_initialize();
 
-            MobileCenter.Start("b0a3593d-f58a-4b47-bfc8-854e314d1351",
-                   typeof(Analytics), typeof(Crashes));
+            //MobileCenter.Start("b0a3593d-f58a-4b47-bfc8-854e314d1351",
+            //       typeof(Analytics), typeof(Crashes));
 
             base.OnCreate(savedInstanceState);
 
