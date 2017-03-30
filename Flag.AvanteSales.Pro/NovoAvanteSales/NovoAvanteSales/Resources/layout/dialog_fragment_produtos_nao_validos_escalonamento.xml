@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="O(s) produto(s) abaixo ultrapassaram o desconto máximo permitido." />
+    
+  <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_marginColor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="0dp"
+						android:layout_weight="0.8"
+            android:text="Código"
+            android:gravity="center|center_horizontal"
+            style="@style/HeaderGrid" />
+    <TextView
+            android:gravity="center|center_horizontal"
+            android:text="Máximo"
+            android:layout_width="0dp"
+						android:layout_weight="1.2"
+            style="@style/HeaderGrid" />
+    <TextView
+            android:gravity="center|center_horizontal"
+            android:layout_width="0dp"
+						android:layout_weight="1.2"
+            android:text="Aplicado"
+            style="@style/HeaderGrid" />
+  </LinearLayout>
+  <ListView
+        android:cacheColorHint="#00000000"
+        android:id="@+id/listProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice" />
+</LinearLayout>

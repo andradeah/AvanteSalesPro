@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu_principal"
+    android:id="@+id/llRow">
+    <ImageView
+        android:id="@+id/imgIcone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom" />
+    <TextView
+        android:id="@+id/lblLegenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_big"
+        android:textColor="@color/white"
+        android:layout_gravity="center|top" />
+</LinearLayout>

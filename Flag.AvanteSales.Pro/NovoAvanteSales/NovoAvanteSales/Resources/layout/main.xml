@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <android.support.v7.widget.Toolbar
+        android:id="@+id/tbToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+    <ImageView
+            android:id="@+id/imgLogo"
+            android:src="@drawable/logoavante_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+  </android.support.v7.widget.Toolbar>
+  <RelativeLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snow">
+    <ImageView
+      android:id="@+id/imgConta"
+      android:layout_gravity="left"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:src="@drawable/conta"/>
+    <TextView
+            android:layout_toRightOf="@id/imgConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblVendedor"
+            android:text="vendedor"
+            android:textStyle="bold"
+            android:paddingTop="5dp"/>
+    <TextView
+            android:layout_gravity="bottom"
+            android:layout_toRightOf="@id/imgConta"
+            android:layout_below="@id/lblVendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblData"
+            android:text="xx/xx/xx"
+            android:textSize="@dimen/font_size_small"/>
+  </RelativeLayout>
+
+  <GridView
+       android:background="@color/snow"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginBottom="10dp"
+       android:id="@+id/grdMenu"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:numColumns="2"
+       android:verticalSpacing="10dp"
+       android:horizontalSpacing="10dp"
+       android:stretchMode="columnWidth"
+       android:gravity="center" />
+
+</LinearLayout>
